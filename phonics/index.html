@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>拼讀小達人班｜課程簡介</title>
+<meta name="description" content="吉的堡城上城分校《拼讀小達人班》：依據閱讀科學（Science of Reading）設計，從音素覺察開始，練到聽音會拼、看字會唸。2026/12/16（三）開課。">
+<meta property="og:title" content="拼讀小達人班｜課程簡介">
+<meta property="og:description" content="美國小學正在推行的閱讀科學・2026/12/16（三）開課・每週三 17:00–18:30">
+<meta property="og:image" content="https://csckidcastle.github.io/phonics/poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F6EFE6; --band:#EADFD0; --ink:#1F2A44; --ink-2:#55607A; --line:#DCCFBE;
+  --accent:#D9573A; --accent-soft:#FADAD4; --gold:#F2B92E; --on-ink:#F6EFE6; --on-ink-2:#B9C1D3;
+  --pa:#D9736B; --ph:#E89C72; --fl:#F2DC8F; --vo:#7DBF8E; --co:#6F86A6;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --latin:"Cormorant Garamond","Times New Roman",serif;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);margin:0;line-height:1.3;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.nw{white-space:nowrap}
+.eyebrow{font-family:var(--latin);font-style:italic;font-weight:600;font-size:1.2rem;color:var(--accent)}
+.sec{padding:48px 0}
+.sec h2{font-size:1.6rem;margin:4px 0 16px}
+.ink{background:var(--ink);color:var(--on-ink)}
+.ink .eyebrow{color:var(--gold)}
+.ink .sub{color:var(--on-ink-2)}
+.band{background:var(--band)}
+.sub{color:var(--ink-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4em;border-radius:99px;font-weight:700;text-decoration:none;padding:.75em 1.4em;white-space:nowrap}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-line{background:#06C755;color:#fff}
+.btn-ghost{box-shadow:inset 0 0 0 1.5px currentColor}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top::after{content:"";display:block;height:4px;background:linear-gradient(90deg,#D93A2B 0 25%,#F2B92E 0 50%,#4BA54A 0 75%,#3B8ED4 0)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none}
+.brand img{width:42px;height:auto}
+.brand b{font-family:var(--serif);font-size:.98rem;display:block;line-height:1.2}
+.brand small{display:block;font-size:.72rem;color:var(--ink-2);line-height:1.4}
+.top .btn{padding:.5em 1em;font-size:.88rem}
+
+/* hero */
+.hero{padding:24px 0 40px}
+.hero .poster{border-radius:var(--r);box-shadow:0 10px 30px rgba(31,42,68,.18);width:100%;height:auto}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 12px}
+.chip{display:inline-block;background:var(--accent-soft);color:#A6381F;font-weight:700;font-size:.85rem;padding:.25em .9em;border-radius:99px}
+.chip.gold{background:#FBE7B0;color:#6B4A00}
+.hero h1{font-size:2rem}
+.hero .lead{font-size:1.08rem;margin-top:8px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* pyramid */
+.pyr{display:flex;flex-direction:column;align-items:center;gap:6px;margin:20px 0 8px}
+.pyr div{border-radius:10px;color:var(--ink);text-align:center;padding:8px 6px;line-height:1.35}
+.pyr b{display:block;font-size:.98rem}
+.pyr i{font-family:var(--latin);font-size:.95rem}
+.pyr .l5{background:var(--co);color:#fff;width:44%}
+.pyr .l4{background:var(--vo);width:58%}
+.pyr .l3{background:var(--fl);width:72%}
+.pyr .l2{background:var(--ph);width:86%}
+.pyr .l1{background:var(--pa);color:#fff;width:100%;box-shadow:0 0 0 3px var(--gold)}
+.callout{background:#fff;border-left:5px solid var(--gold);border-radius:10px;padding:16px 18px;margin-top:20px;font-weight:500}
+.callout strong{color:var(--accent)}
+
+/* steps */
+.steps{display:grid;gap:12px;margin-top:8px;counter-reset:s}
+.step{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:var(--r);padding:16px}
+.step .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--gold);display:grid;place-items:center;font-family:var(--latin);font-weight:600;font-size:1.25rem}
+.step h3{font-size:1.1rem}
+.step p{color:var(--ink-2);font-size:.95rem}
+
+/* news */
+.news{display:grid;gap:12px}
+.news a.card{display:block;text-decoration:none;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:16px}
+.news .src{font-size:.8rem;color:var(--gold);font-weight:700;letter-spacing:.04em}
+.news h3{font-size:1.05rem;margin:4px 0 6px;font-family:var(--sans);font-weight:700}
+.news p{font-size:.92rem;color:var(--on-ink-2)}
+.news .more{display:inline-block;margin-top:8px;font-size:.85rem;color:var(--on-ink);text-decoration:underline}
+
+/* loop */
+.loop{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.loop div{background:#fff;border-radius:var(--r);padding:14px;text-align:center}
+.loop .ic{font-size:1.6rem;line-height:1}
+.loop b{display:block;margin-top:6px}
+.loop span{font-size:.88rem;color:var(--ink-2)}
+.fb{margin-top:16px;background:#fff;border-radius:var(--r);padding:16px 18px}
+.fb h3{font-size:1.05rem;margin-bottom:8px}
+.fb ul{margin:0;padding-left:0;list-style:none;display:grid;gap:6px}
+.fb li{font-size:.95rem}
+
+/* videos */
+.vids{display:grid;gap:18px}
+.vid h3{font-size:1.08rem;margin-bottom:4px;font-family:var(--sans);font-weight:700}
+.vid p{font-size:.92rem;margin-bottom:10px}
+.frame{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#0E1424}
+.frame button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
+.frame button img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+.frame button .ph{position:absolute;inset:0;align-content:start;padding-top:22px!important;background:linear-gradient(135deg,#2C3949,#1F2A44);display:grid;place-items:center;color:var(--on-ink);font-family:var(--serif);font-size:1.3rem;text-align:center;padding:16px}
+.frame .play{position:relative;width:68px;height:48px;border-radius:14px;background:#E53935;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.frame .play::after{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid .alt{display:inline-block;margin-top:8px;font-size:.85rem}
+.chan{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:16px}
+.chan h3{font-size:1.05rem}
+
+/* info */
+.info{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden}
+.info th,.info td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:.95rem}
+.info tr:last-child th,.info tr:last-child td{border-bottom:0}
+.info th{width:5.5em;color:var(--ink-2);font-weight:500;white-space:nowrap}
+.info .due{color:#A6381F;font-weight:700}
+
+/* teacher */
+.teacher{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:var(--r);padding:18px}
+.teacher .av{flex:none;width:52px;height:52px;border-radius:50%;background:var(--ink);color:var(--gold);display:grid;place-items:center;font-family:var(--latin);font-weight:600;font-size:1.6rem}
+.teacher h3{font-size:1.1rem}
+.teacher p{font-size:.93rem;color:var(--ink-2)}
+
+/* end */
+.end{text-align:center}
+.end .cta{justify-content:center}
+footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));font-size:.8rem;color:var(--ink-2);text-align:center}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://csckidcastle.github.io/">
+      <img src="logo.png" alt="吉的堡 Kid Castle">
+      <div><b>拼讀小達人班</b><small>吉的堡 城上城分校</small></div>
+    </a>
+    <a class="btn btn-primary" href="https://csckidcastle.github.io/">我要報名</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <img class="poster" src="poster.jpg" width="900" height="1133" alt="拼讀小達人班海報：孩子的第一堂自然發音課，閱讀科學的學習金字塔，最底層是音素覺察">
+    <div class="meta">
+      <span class="chip">2026/12/16（三）開課</span>
+      <span class="chip gold">升小一最佳橋樑課程</span>
+    </div>
+    <h1>孩子的第一堂自然發音課</h1>
+    <p class="lead">依據美國小學正在推行的<b>閱讀科學（Science of Reading）</b>設計，從音素覺察開始，練到<b class="nw">聽音會拼</b>、<b class="nw">看字會唸</b>。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://csckidcastle.github.io/">線上選課・報名</a>
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@285yhzrq">LINE@ 詢問</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="why">
+  <div class="wrap">
+    <p class="eyebrow">Why Science of Reading</p>
+    <h2>孩子單字記不起來、拼不出來？</h2>
+    <p>不是記性不好，而是少了「音素覺察」這一步。閱讀科學把學會閱讀拆成五層，一層一層往上蓋；拼讀小達人班從最底層開始。</p>
+    <div class="pyr" role="img" aria-label="閱讀科學學習金字塔，由上到下：文意理解、單字識別、流暢準確、自然拼讀、音素覺察">
+      <div class="l5"><b>文意理解</b><i>Comprehension</i></div>
+      <div class="l4"><b>單字識別</b><i>Vocabulary &amp; Grammar</i></div>
+      <div class="l3"><b>流暢準確</b><i>Fluency</i></div>
+      <div class="l2"><b>自然拼讀</b><i>Phonics</i></div>
+      <div class="l1"><b>音素覺察</b><i>Phonemic Awareness</i></div>
+    </div>
+    <p class="callout">先練耳朵聽出單字裡的每個聲音，<strong>再學聲音和字母怎麼對應</strong>。</p>
+  </div>
+</section>
+
+<section class="sec" id="steps">
+  <div class="wrap">
+    <p class="eyebrow">Three Steps</p>
+    <h2>三個步驟，循序漸進</h2>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div><h3>音素覺察</h3><p>先聽出單字裡的每個聲音，打好拼讀的基礎。</p></div></div>
+      <div class="step"><span class="n">2</span><div><h3>聽音會拼</h3><p>聽到單字就能拼出來，搭配點讀筆在家複習。</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>看字會唸</h3><p>學會字母和字母組合的發音規則，自己讀出新單字。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ink" id="news">
+  <div class="wrap">
+    <p class="eyebrow">In the News</p>
+    <h2>美國正在推行的閱讀科學</h2>
+    <div class="news">
+      <a class="card" href="https://houchin.house.gov/media/press-releases/rep-houchin-bill-improve-literacy-education-practices-passes-house" target="_blank" rel="noopener">
+        <span class="src">美國國會｜2026 年 9 月</span>
+        <h3>眾議院通過《閱讀科學法案》</h3>
+        <p>要求聯邦讀寫補助優先支持依閱讀科學設計的教學；參議院版本（READ Act）審議中。</p>
+        <span class="more">閱讀原文（英文）</span>
+      </a>
+      <a class="card" href="https://time.com/article/2026/09/23/louisa-moats-letrs-training-reading-interview/" target="_blank" rel="noopener">
+        <span class="src">TIME 雜誌｜2026 年 9 月</span>
+        <h3>〈The Woman Winning the Reading Wars〉</h3>
+        <p>閱讀不是孩子自然就會的，需要一步一步教。美國許多州已立法要求學校這樣教，2025 年約有 70 萬名老師參加相關培訓。</p>
+        <span class="more">閱讀原文（英文）</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="weekly">
+  <div class="wrap">
+    <p class="eyebrow">Every Week</p>
+    <h2>每週的學習循環</h2>
+    <div class="loop">
+      <div><span class="ic" aria-hidden="true">🏫</span><b>上課</b><span>學新的拼讀規則</span></div>
+      <div><span class="ic" aria-hidden="true">📄</span><b>作業單</b><span>每週帶回家複習</span></div>
+      <div><span class="ic" aria-hidden="true">🎥</span><b>錄音／錄影</b><span>在家錄一段唸讀，傳到 LINE@</span></div>
+      <div><span class="ic" aria-hidden="true">👩‍🏫</span><b>老師回饋</b><span>一對一校正發音</span></div>
+    </div>
+    <div class="fb">
+      <h3>老師的回饋會包含</h3>
+      <ul>
+        <li>⭐ <b>做得好</b>：孩子這次進步的地方</li>
+        <li>🗣 <b>請調整</b>：需要再唸清楚的聲音</li>
+        <li>🎯 <b>下一步</b>：接下來的練習重點</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec ink" id="videos">
+  <div class="wrap">
+    <p class="eyebrow">Watch &amp; Listen</p>
+    <h2>先看看、先聽聽</h2>
+    <div class="vids">
+      <div class="vid">
+        <h3>什麼是閱讀科學（SoR）？</h3>
+        <p class="sub">給家長的介紹影片</p>
+        <div class="frame">
+          <button type="button" data-src="https://www.youtube-nocookie.com/embed/sUxffTDH8LQ?autoplay=1&amp;rel=0" aria-label="播放：SoR 介紹影片">
+            <img src="https://i.ytimg.com/vi/sUxffTDH8LQ/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
+            <span class="play"></span>
+          </button>
+        </div>
+        <a class="alt" href="https://youtu.be/sUxffTDH8LQ" target="_blank" rel="noopener">在 YouTube 開啟</a>
+      </div>
+      <div class="vid">
+        <h3>📖 救聲員故事</h3>
+        <p class="sub">用故事認識每個聲音</p>
+        <div class="frame">
+          <button type="button" data-src="https://www.youtube-nocookie.com/embed/videoseries?list=PLnsjFr1yA7YGoc_dd2DvPsxwZ9JJkbwZr&amp;autoplay=1&amp;rel=0" aria-label="播放：救聲員故事播放清單">
+            <span class="ph">救聲員故事・播放清單</span>
+            <span class="play"></span>
+          </button>
+        </div>
+        <a class="alt" href="https://www.youtube.com/playlist?list=PLnsjFr1yA7YGoc_dd2DvPsxwZ9JJkbwZr" target="_blank" rel="noopener">在 YouTube 開啟</a>
+      </div>
+      <div class="chan">
+        <div><h3>🎵 SoR 用音樂學英文</h3><p class="sub">SoR 歌曲頻道，在家也能一起唱</p></div>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@sormusicstudio" target="_blank" rel="noopener">前往頻道</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="info">
+  <div class="wrap">
+    <p class="eyebrow">Course Details</p>
+    <h2>課程資訊</h2>
+    <table class="info">
+      <tr><th>對象</th><td>大班以上（6 歲以上）</td></tr>
+      <tr><th>開課</th><td>2026/12/16（三）</td></tr>
+      <tr><th>時間</th><td>每週三 17:00–18:30</td></tr>
+      <tr><th>學程</th><td>全套 40 堂・共 60 小時<br>分兩期，各 20 堂</td></tr>
+      <tr><th>地點</th><td>城上城分校<br>基隆市麥金路 193 號 2 樓<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BA%E9%9A%86%E5%B8%82%E9%BA%A5%E9%87%91%E8%B7%AF193%E8%99%9F" target="_blank" rel="noopener">開啟地圖</a></td></tr>
+      <tr><th>人數</th><td>6 人開班・12 人滿額</td></tr>
+      <tr><th>學費</th><td>每期 NT$15,000</td></tr>
+      <tr><th>教材費</th><td>NT$6,000（三冊點讀教材＋點讀筆）<br>兩期共用，只在上期繳一次</td></tr>
+      <tr><th>報名</th><td><span class="due">城上城幼兒園：回條請於 11/30（一）前繳回</span><br>其他學校：線上選課單報名</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="sec band" id="teacher">
+  <div class="wrap">
+    <p class="eyebrow">Your Teacher</p>
+    <h2>授課老師</h2>
+    <div class="teacher">
+      <span class="av" aria-hidden="true">J</span>
+      <div>
+        <h3>Jessie 老師</h3>
+        <p>現任吉的堡城上城分園美語部主任；輔大英文、哲學雙主修，曾赴美國 Columbia 等校進修。曾任 SoR 美語 臺北旗艦殿殿長・師資。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec end">
+  <div class="wrap">
+    <h2>讓孩子從第一個聲音開始</h2>
+    <p class="sub">名額有限，6 人開班・12 人滿額</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://csckidcastle.github.io/">線上選課・報名</a>
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@285yhzrq">LINE@ 詢問</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>吉的堡 城上城分校・拼讀小達人班</footer>
+
+<script>
+document.querySelectorAll('.frame button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src=b.getAttribute('data-src');
+    f.title=b.getAttribute('aria-label');
+    f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen=true;
+    b.parentNode.replaceChild(f,b);
+  });
+});
+</script>
+</body>
+</html>
