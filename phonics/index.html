@@ -97,6 +97,16 @@ img{max-width:100%;display:block}
 .fb ul{margin:0;padding-left:0;list-style:none;display:grid;gap:6px}
 .fb li{font-size:.95rem}
 
+/* class scenes */
+.scenes{display:grid;gap:12px}
+.scene{background:#fff;border-radius:var(--r);overflow:hidden}
+.scene video{display:block;width:100%;height:auto;background:#ddd}
+.scene p{padding:10px 14px;font-size:.92rem}
+.scene b{display:block;font-size:1rem}
+.dicts{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px 6px 0}
+.dicts video{border-radius:10px;aspect-ratio:1/1;object-fit:cover}
+.note{font-size:.8rem;color:var(--ink-2);margin-top:10px}
+
 /* videos */
 .vids{display:grid;gap:18px}
 .vid h3{font-size:1.08rem;margin-bottom:4px;font-family:var(--sans);font-weight:700}
@@ -221,6 +231,28 @@ footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));font-size:.8r
         <li>🎯 <b>下一步</b>：接下來的練習重點</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<section class="sec band" id="scenes">
+  <div class="wrap">
+    <p class="eyebrow">In Class</p>
+    <h2>課堂現場</h2>
+    <div class="scenes">
+      <div class="scene">
+        <div class="dicts">
+          <video src="media/dict1.mp4" poster="media/dict1.jpg" autoplay muted loop playsinline preload="metadata" aria-label="孩子手指著拼讀字典，一個一個唸"></video>
+          <video src="media/dict2.mp4" poster="media/dict2.jpg" autoplay muted loop playsinline preload="metadata" aria-label="孩子手指著拼讀字典，一個一個唸"></video>
+          <video src="media/dict3.mp4" poster="media/dict3.jpg" autoplay muted loop playsinline preload="metadata" aria-label="孩子手指著拼讀字典，一個一個唸"></video>
+        </div>
+        <p><b>📖 自己唸拼讀字典</b>手指著字典，一個字一個字唸出來</p>
+      </div>
+      <div class="scene">
+        <video src="media/cursive.mp4" poster="media/cursive.jpg" autoplay muted loop playsinline preload="metadata" aria-label="孩子拿筆練習英文草寫"></video>
+        <p><b>✏️ 練習英文草寫</b>一筆一筆，專心寫好每個字母</p>
+      </div>
+    </div>
+    <p class="note">課堂示意影片（其他班級），為保護孩子隱私，只拍手部並已移除聲音。</p>
   </div>
 </section>
 
