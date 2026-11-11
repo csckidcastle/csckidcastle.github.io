@@ -292,6 +292,24 @@ footer.ink .wrap{padding-bottom:120px}
 .creds .cr-h{margin:10px 0 4px;font-size:.8rem;font-weight:700;color:var(--ink-2)}
 .creds ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:.9rem}
 .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}.info-box{background:#FFFDFB;border-radius:14px;padding:12px 14px;font-size:.95rem;gap:8px 14px}.info-box dd{color:var(--ink)}.points small{color:var(--ink-2);font-size:.85rem}.points strong{color:var(--ink)}.d-sec .per{margin:0}
+.arts{display:grid;gap:10px}
+.art{background:#fff;border-radius:16px;padding:14px 16px;border-left:5px solid var(--c,var(--accent));font-size:.9rem;line-height:1.65}
+.art .n-src{margin:0;color:var(--c,var(--accent));font-weight:700;font-size:.8rem}
+.art h5{margin:4px 0 0;font-size:1.02rem;font-weight:900;font-family:var(--serif)}
+.art .en{display:block;font-family:var(--latin);font-style:italic;color:var(--ink-2);margin-bottom:6px}
+.art>a{color:var(--c,var(--accent));font-weight:700;font-size:.85rem}
+.guide{margin:10px 0;background:var(--paper);border-radius:12px;padding:10px 12px}
+.guide summary{cursor:pointer;font-weight:700;color:var(--c,var(--accent));font-size:.9rem}
+.guide .g-sum{margin:10px 0 0;color:var(--ink-2)}
+.guide .g-h{margin:12px 0 6px;font-weight:700;font-size:.88rem}
+.guide .g-pts{margin:0;padding-left:1.3em;display:grid;gap:6px;color:var(--ink-2)}
+.guide .g-pts b,.guide .g-note b{color:var(--ink)}
+.guide .g-terms{margin:0;display:grid;gap:6px}
+.guide .g-terms div{background:#fff;border-radius:10px;padding:8px 10px}
+.guide dt{font-weight:700;font-size:.88rem}.guide dt span{margin-left:8px;color:var(--c,var(--accent))}
+.guide dd{margin:2px 0 0;font-size:.85rem;color:var(--ink-2)}
+.guide .g-note{margin:12px 0 0;border-left:3px solid var(--c,var(--accent));padding-left:10px;color:var(--ink-2)}
+.art .a-desc{margin:0 0 4px;color:var(--ink-2)}.arts-end{margin:4px 0 0;font-weight:700}
 .ph-note{font-size:.78rem;color:var(--ink-2);margin:0}
 .d-actions{display:flex;gap:10px;flex-wrap:wrap;position:sticky;bottom:0;background:var(--paper);padding-top:8px}
 @media (max-width:420px){.loop{grid-template-columns:repeat(2,1fr)}}
@@ -526,7 +544,7 @@ const DETAIL={
   matNote:"NT$6,000，兩期共用，只在上期繳一次（三冊點讀教材＋點讀筆）",
   intro:"依據 Science of Reading（SoR）設計：結合大腦科學、認知心理與語言學的閱讀研究，循序漸進、一步一步教。",
   points:[["1","音素覺察：先聽出單字裡的每個聲音，打好拼讀的基礎"],["2","聽音會拼：聽到單字就能拼出來，搭配點讀筆在家複習"],["3","看字會唸：學會字母和字母組合的發音規則，自己讀出新單字"]],
-  news:{src:"美國 TIME 雜誌 2026 年 9 月專題〈The Woman Winning the Reading Wars〉",url:"https://time.com/article/2026/09/23/louisa-moats-letrs-training-reading-interview/",pts:["閱讀不是孩子自然就會的，需要一步一步教","先練習聽出單字裡的聲音，再學聲音和字母怎麼對應","美國許多州已立法要求學校這樣教，2025 年約有 70 萬名老師參加相關培訓","2026 年 9 月，美國眾議院通過《閱讀科學法案》，要求聯邦讀寫補助優先支持依閱讀科學設計的教學；參議院版本（READ Act）審議中"],end:"拼讀小達人班就是照這個順序設計的。"},
+  articles:[{"src": "美國眾議院｜2026/9/16", "title": "眾議院通過《閱讀科學法案》", "en": "Science of Reading Act of 2026（H.R. 7890）", "desc": "要求聯邦讀寫補助優先支持依閱讀科學設計的教學；參議院版本（READ Act）審議中。", "url": "https://houchin.house.gov/media/press-releases/rep-houchin-bill-improve-literacy-education-practices-passes-house", "g": "<details class=\"guide\"><summary>看中文導讀</summary><p class=\"g-sum\">這項法案由印第安納州眾議員 Erin Houchin 提出，在美國眾議院通過，兩黨議員都表態支持。</p><p class=\"g-h\">三個重點</p><ol class=\"g-pts\"><li>聯邦政府的讀寫教育補助，<b>優先支持依閱讀科學設計的教學</b>。</li><li>補助經費保留給研究證實<b>最有效的教學方法</b>，讓政策和「孩子怎麼學會閱讀」的研究一致。</li><li>新聞稿以印第安納州為例：州長表示，該州推動閱讀科學後，<b>將近九成的三年級學生</b>達到閱讀能力標準。</li></ol><p class=\"g-h\">閱讀科學的五大能力</p><dl class=\"g-terms\"><div><dt>Phonemic Awareness<span>音素覺察</span></dt><dd>聽出單字裡的每個聲音。</dd></div><div><dt>Phonics<span>自然拼讀</span></dt><dd>字母和聲音的對應規則。</dd></div><div><dt>Fluency<span>流暢度</span></dt><dd>讀得又快又準。</dd></div><div><dt>Vocabulary<span>字彙</span></dt><dd>認識、理解單字的意思。</dd></div><div><dt>Comprehension<span>理解</span></dt><dd>看懂整段文章在說什麼。</dd></div></dl><p class=\"g-note\"><b>美國已經走到立法這一步：</b>眾議院通過法案，要讓聯邦的讀寫教育經費優先支持閱讀科學。在台灣學英文的孩子，也可以從現在就跟上。</p></details>"}, {"src": "TIME 雜誌｜2026/9/23", "title": "閱讀科學如何改變美國的閱讀教學", "en": "The Woman Winning the Reading Wars", "desc": "閱讀不是孩子自然就會的，需要一步一步教。美國許多州已立法要求學校這樣教，2025 年約有 70 萬名老師參加相關培訓。", "url": "https://time.com/article/2026/09/23/louisa-moats-letrs-training-reading-interview/", "g": "<details class=\"guide\"><summary>看中文導讀</summary><p class=\"g-sum\">這篇專訪介紹閱讀專家 Louisa Moats，以及她參與編寫的教師培訓課程 LETRS，說明美國學校正在改用閱讀科學的方法教孩子讀書。</p><p class=\"g-h\">三個重點</p><ol class=\"g-pts\"><li>閱讀不是孩子自然就會的能力，需要<b>一步一步、有系統地教</b>。</li><li>先練習<b>聽出單字裡的每個聲音</b>，再學聲音和字母怎麼對應。</li><li>美國許多州已經立法要求學校這樣教，2025 年約有 <b>70 萬名老師</b>參加相關培訓。</li></ol><p class=\"g-h\">關鍵詞解釋</p><dl class=\"g-terms\"><div><dt>Science of Reading<span>閱讀科學</span></dt><dd>綜合大腦科學、認知心理學和語言學的研究，說明孩子是怎麼學會閱讀的。</dd></div><div><dt>Phonemic Awareness<span>音素覺察</span></dt><dd>聽得出、分得出單字裡最小的聲音，例如 cat 是 /k/、/æ/、/t/ 三個聲音。</dd></div><div><dt>Phonics<span>自然拼讀</span></dt><dd>學會字母和聲音的對應規則，看到字就能唸，聽到音就能拼。</dd></div><div><dt>LETRS<span>教師閱讀科學培訓</span></dt><dd>一套給老師的專業培訓課程，教老師用閱讀科學的方法教閱讀和拼字。</dd></div></dl><p class=\"g-note\"><b>和我們的 SoR 拼讀課程：</b>課程就是照這個順序設計的，先練音素覺察，再學自然拼讀。</p></details>"}],artEnd:"拼讀小達人班就是照這個順序設計的：先練音素覺察，再學自然拼讀。",
   loop:[["上課","學新的拼讀規則"],["作業單","每週帶回家複習"],["錄影朗讀","在家錄一段唸讀"],["老師回饋","逐一回饋每位孩子"]],
   photos:["點讀筆與教材","拼讀卡練習","課堂小組活動","作業單範例","錄影作業（不露臉）","學習成果"],video:"錄影作業回饋示範"}
 };
@@ -545,6 +563,7 @@ function openDetail(id){
   <div class="d-sec"><h4>老師介紹 <i>Teacher</i></h4><div class="teacher"><div class="avatar" aria-hidden="true">${d.teacher.photo?`<img src="${d.teacher.photo}" alt="">`:d.teacher.initial}</div><div><b>${d.teacher.name}</b>${d.teacher.bio?`<span>${d.teacher.bio}</span>`:""}</div></div>${d.teacher.line?(/^https?:/.test(d.teacher.line)?`<a class="line-btn" href="${d.teacher.line}" target="_blank" rel="noopener"><b>${d.teacher.lineLabel||"課程諮詢・加入 LINE"}</b><span>點我加入 LINE</span></a>`:`<a class="line-btn" href="https://line.me/R/ti/p/${d.teacher.line}" target="_blank" rel="noopener"><b>課程諮詢・加入班級 LINE@</b><span>LINE ID：${d.teacher.line}</span></a>`):""}${d.teacher.creds?`<details class="creds"><summary>看完整學經歷</summary>${d.teacher.creds.map(([h,l])=>`<p class="cr-h">${h}</p><ul>${l.map(x=>`<li>${x}</li>`).join("")}</ul>`).join("")}</details>`:""}</div>
   <div class="d-sec"><h4>學習重點 <i>What they learn</i></h4>${d.intro?`<p class="intro">${d.intro}</p>`:""}<ul class="points">${d.points.map(([k,t])=>`<li><b>${k.length>2?k.slice(0,1):k}</b><span>${t}</span></li>`).join("")}</ul></div>
   ${d.feats?`<div class="d-sec"><h4>課程特色 <i>Highlights</i></h4><ul class="points">${d.feats.map(([n,t,x])=>`<li><b>${n}</b><span><strong>${t}</strong><br>${x}</span></li>`).join("")}</ul></div>`:""}
+  ${d.articles?`<div class="d-sec"><h4>國際觀點 <i>Why SoR</i></h4><div class="arts">${d.articles.map(a=>`<div class="art"><p class="n-src">${a.src}</p><h5>${a.title}</h5><span class="en">${a.en}</span>${a.desc?`<p class="a-desc">${a.desc}</p>`:""}${a.g}<a href="${a.url}" target="_blank" rel="noopener">閱讀原文（英文）›</a></div>`).join("")}</div>${d.artEnd?`<p class="arts-end">${d.artEnd}</p>`:""}</div>`:""}
   ${d.news?`<div class="d-sec"><h4>國際觀點 <i>Why SoR</i></h4><div class="news"><p class="n-src">${d.news.src}報導：</p><ul>${d.news.pts.map(t=>`<li>${t}</li>`).join("")}</ul><p class="n-end">${d.news.end}</p><a href="${d.news.url}" target="_blank" rel="noopener">閱讀原文（英文）›</a></div></div>`:""}
   ${d.loop?`<div class="d-sec"><h4>每週學習循環 <i>Weekly loop</i></h4><div class="loop">${d.loop.map(([a,b])=>`<div><b>${a}</b>${b}</div>`).join("")}</div></div>`:""}
   ${d.photoUrls?`<div class="d-sec"><h4>上課集錦 <i>In class</i></h4><div class="gallery">${photos}</div>

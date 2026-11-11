@@ -84,7 +84,21 @@ img{max-width:100%;display:block}
 .news .src{font-size:.8rem;color:var(--gold);font-weight:700;letter-spacing:.04em}
 .news h3{font-size:1.05rem;margin:4px 0 6px;font-family:var(--sans);font-weight:700}
 .news p{font-size:.92rem;color:var(--on-ink-2)}
-.news .more{display:inline-block;margin-top:8px;font-size:.85rem;color:var(--on-ink);text-decoration:underline}
+.news .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:16px}
+.news .card .en{display:block;font-family:var(--latin);font-style:italic;font-size:1rem;color:var(--on-ink-2);margin:-2px 0 6px}
+.guide{margin-top:12px;background:rgba(255,255,255,.06);border-radius:12px;padding:10px 14px}
+.guide summary{cursor:pointer;font-weight:700;color:var(--gold);font-size:.92rem}
+.guide .g-sum{margin-top:10px}
+.guide .g-h{margin:14px 0 6px;font-weight:700;color:var(--on-ink);font-size:.9rem}
+.guide .g-pts{margin:0;padding-left:1.3em;display:grid;gap:6px;font-size:.92rem;color:var(--on-ink-2)}
+.guide .g-pts b,.guide .g-note b{color:var(--gold)}
+.guide .g-terms{margin:0;display:grid;gap:8px}
+.guide .g-terms div{background:rgba(255,255,255,.06);border-radius:10px;padding:8px 12px}
+.guide dt{font-weight:700;color:var(--on-ink);font-size:.9rem}.guide dt span{margin-left:8px;color:var(--gold)}
+.guide dd{margin:2px 0 0;font-size:.88rem;color:var(--on-ink-2)}
+.guide .g-note{margin-top:12px;border-left:3px solid var(--gold);padding-left:10px;font-size:.9rem;color:var(--on-ink-2)}
+
+.news .card .more{display:inline-block;margin-top:8px;font-size:.85rem;color:var(--on-ink);text-decoration:underline}
 
 /* loop */
 .loop{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
@@ -182,18 +196,20 @@ footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));font-size:.8r
     <p class="eyebrow">In the News</p>
     <h2>美國正在推行的閱讀科學</h2>
     <div class="news">
-      <a class="card" href="https://houchin.house.gov/media/press-releases/rep-houchin-bill-improve-literacy-education-practices-passes-house" target="_blank" rel="noopener">
-        <span class="src">美國國會｜2026 年 9 月</span>
-        <h3>眾議院通過《閱讀科學法案》</h3>
+      <div class="card">
+        <span class="src">美國眾議院｜2026/9/16</span>
+        <h3>眾議院通過《閱讀科學法案》</h3><span class="en">Science of Reading Act of 2026（H.R. 7890）</span>
         <p>要求聯邦讀寫補助優先支持依閱讀科學設計的教學；參議院版本（READ Act）審議中。</p>
-        <span class="more">閱讀原文（英文）</span>
-      </a>
-      <a class="card" href="https://time.com/article/2026/09/23/louisa-moats-letrs-training-reading-interview/" target="_blank" rel="noopener">
-        <span class="src">TIME 雜誌｜2026 年 9 月</span>
-        <h3>〈The Woman Winning the Reading Wars〉</h3>
+        <details class="guide"><summary>看中文導讀</summary><p class="g-sum">這項法案由印第安納州眾議員 Erin Houchin 提出，在美國眾議院通過，兩黨議員都表態支持。</p><p class="g-h">三個重點</p><ol class="g-pts"><li>聯邦政府的讀寫教育補助，<b>優先支持依閱讀科學設計的教學</b>。</li><li>補助經費保留給研究證實<b>最有效的教學方法</b>，讓政策和「孩子怎麼學會閱讀」的研究一致。</li><li>新聞稿以印第安納州為例：州長表示，該州推動閱讀科學後，<b>將近九成的三年級學生</b>達到閱讀能力標準。</li></ol><p class="g-h">閱讀科學的五大能力</p><dl class="g-terms"><div><dt>Phonemic Awareness<span>音素覺察</span></dt><dd>聽出單字裡的每個聲音。</dd></div><div><dt>Phonics<span>自然拼讀</span></dt><dd>字母和聲音的對應規則。</dd></div><div><dt>Fluency<span>流暢度</span></dt><dd>讀得又快又準。</dd></div><div><dt>Vocabulary<span>字彙</span></dt><dd>認識、理解單字的意思。</dd></div><div><dt>Comprehension<span>理解</span></dt><dd>看懂整段文章在說什麼。</dd></div></dl><p class="g-note"><b>美國已經走到立法這一步：</b>眾議院通過法案，要讓聯邦的讀寫教育經費優先支持閱讀科學。在台灣學英文的孩子，也可以從現在就跟上。</p></details>
+        <a class="more" href="https://houchin.house.gov/media/press-releases/rep-houchin-bill-improve-literacy-education-practices-passes-house" target="_blank" rel="noopener">閱讀原文（英文）›</a>
+      </div>
+      <div class="card">
+        <span class="src">TIME 雜誌｜2026/9/23</span>
+        <h3>閱讀科學如何改變美國的閱讀教學</h3><span class="en">The Woman Winning the Reading Wars</span>
         <p>閱讀不是孩子自然就會的，需要一步一步教。美國許多州已立法要求學校這樣教，2025 年約有 70 萬名老師參加相關培訓。</p>
-        <span class="more">閱讀原文（英文）</span>
-      </a>
+        <details class="guide"><summary>看中文導讀</summary><p class="g-sum">這篇專訪介紹閱讀專家 Louisa Moats，以及她參與編寫的教師培訓課程 LETRS，說明美國學校正在改用閱讀科學的方法教孩子讀書。</p><p class="g-h">三個重點</p><ol class="g-pts"><li>閱讀不是孩子自然就會的能力，需要<b>一步一步、有系統地教</b>。</li><li>先練習<b>聽出單字裡的每個聲音</b>，再學聲音和字母怎麼對應。</li><li>美國許多州已經立法要求學校這樣教，2025 年約有 <b>70 萬名老師</b>參加相關培訓。</li></ol><p class="g-h">關鍵詞解釋</p><dl class="g-terms"><div><dt>Science of Reading<span>閱讀科學</span></dt><dd>綜合大腦科學、認知心理學和語言學的研究，說明孩子是怎麼學會閱讀的。</dd></div><div><dt>Phonemic Awareness<span>音素覺察</span></dt><dd>聽得出、分得出單字裡最小的聲音，例如 cat 是 /k/、/æ/、/t/ 三個聲音。</dd></div><div><dt>Phonics<span>自然拼讀</span></dt><dd>學會字母和聲音的對應規則，看到字就能唸，聽到音就能拼。</dd></div><div><dt>LETRS<span>教師閱讀科學培訓</span></dt><dd>一套給老師的專業培訓課程，教老師用閱讀科學的方法教閱讀和拼字。</dd></div></dl><p class="g-note"><b>和我們的 SoR 拼讀課程：</b>課程就是照這個順序設計的，先練音素覺察，再學自然拼讀。</p></details>
+        <a class="more" href="https://time.com/article/2026/09/23/louisa-moats-letrs-training-reading-interview/" target="_blank" rel="noopener">閱讀原文（英文）›</a>
+      </div>
     </div>
   </div>
 </section>
